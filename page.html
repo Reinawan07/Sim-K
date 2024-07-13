@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Page</title>
+</head>
+
+<body>
+
+    <div class="navbar bg-base-100 z-100">
+        <div class="navbar-start ">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h8m-8 6h16" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                    <li><a>Beranda</a></li>
+                    <li><a>Layanan</a></li>
+                    <li><a>Price Plan</a></li>
+                </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">HalloPet</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a>Beranda</a></li>
+                <li><a>Layanan</a></li>
+                <li><a>Price Plan</a></li>
+            </ul>
+        </div>
+        <div class="navbar-end">
+            <a href="/login.html" class="btn">Logout</a>
+        </div>
+    </div>
+
+    <div class="hero min-h-screen z-20"
+        style="background-image: url(https://images.unsplash.com/photo-1489440543286-a69330151c0b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero-content text-neutral-content text-center">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">HelloPet</h1>
+                <p class="mb-5">
+                    HalloPet adalah tempat penitipan hewan terpercaya yang didedikasikan untuk menyediakan perawatan
+                    terbaik bagi hewan peliharaan Anda. Dengan suasana yang ramah dan staf yang berpengalaman, kami
+                    memastikan setiap hewan mendapatkan perhatian dan kasih sayang yang mereka butuhkan selama tinggal
+                    di sini..
+                </p>
+                <button class="btn btn-primary">Get Started</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Layanan Kami Section -->
+    <section class="py-20 relative z-20">
+        <div class="container mx-auto">
+            <div class="mx-auto max-w-2xl sm:text-center">
+                <h2 class="md:text-5xl text-3xl font-medium tracking-tight mt-7">Layanan Kami</h2>
+                <div class="w-10 mx-auto mt-5 bg-gradient-to-r from-cyan-500 to-blue-500 h-[2px]"></div>
+            </div>
+
+            <div class="flex flex-wrap justify-center mt-10 gap-6">
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://images.unsplash.com/photo-1472491235688-bdc81a63246e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Penitipan Harian</h2>
+                        <p>Ideal untuk pemilik hewan yang memiliki kesibukan harian. Hewan peliharaan Anda akan
+                            mendapatkan
+                            perawatan penuh selama Anda beraktivitas.</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://images.unsplash.com/photo-1425082661705-1834bfd09dca?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Perawatan dan Kebersihan</h2>
+                        <p>Tim kami juga menyediakan layanan perawatan seperti mandi, potong kuku, dan grooming untuk
+                            memastikan hewan peliharaan Anda tetap bersih dan sehat.</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-base-100 w-96 shadow-xl">
+                    <figure class="px-10 pt-10">
+                        <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Shoes"
+                            class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title">Penitipan Menginap</h2>
+                        <p>Pilihan sempurna bagi Anda yang perlu meninggalkan kota atau memiliki jadwal yang padat. Kami
+                            menawarkan fasilitas yang nyaman dan aman untuk hewan peliharaan Anda.</p>
+                        <div class="card-actions">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Price Plans -->
+    <section class="py-20 relative z-20">
+        <div class="container">
+            <div class="mx-auto max-w-2xl sm:text-center">
+                <span class="font-medium text-gray-400 tracking-widest">our price</span>
+                <h2 class="md:text-5xl text-3xl font-medium tracking-tight mt-7">Price Plans</h2>
+                <div class="w-10 mx-auto mt-5 bg-gradient-to-r from-cyan-500 to-blue-500 h-[2px]"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 grid-cols-1 gap-10 2xl:px-28 mt-20">
+
+                <div class="flex flex-col border border-gray-300 rounded-xl overflow-hidden dark:border-gray-700">
+                    <div class="text-center pt-10">
+                        <h5 class="text-xl font-semibold">Penitipan Harian</h5>
+                        <h2 class="text-3xl mt-8 mb-3 items-center align-middle">
+                            <sup class="text-1xl align-middle">Rp</sup>50.000 - <sup
+                                class="text-1xl align-middle">Rp</sup>80.000
+                        </h2>
+                    </div>
+
+                    <div class="p-10">
+                        <ul class="mb-10 text-center">
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">Kucing: Rp 50.000/hari</h5>
+                            </li>
+                            <li>
+                                <h5 class="font-medium dark:text-gray-300">Anjing Kecil (di bawah 10 kg): Rp 60.000/hari
+                                </h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">Anjing Besar (di atas 10 kg): Rp 80.000/hari
+                                </h5>
+                            </li>
+                            <li>
+                                <h5 class="font-medium dark:text-gray-300">Hewan Kecil (kelinci, hamster, burung, dll.):
+                                    Rp 40.000/hari</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium text-gray-500 line-through dark:text-gray-300">-</h5>
+                            </li>
+                        </ul>
+                        <div class="flex justify-center">
+                            <a href="#"
+                                class="py-3 px-6 font-medium border rounded-md border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-500">Penitipan
+                                Harian</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative z-20">
+                    <div class="absolute top-0 inset-x-0">
+                        <div class="flex justify-center">
+                            <span
+                                class="text-xs font-medium uppercase border border-gray-700 text-white bg-black px-2 py-1 rounded-md -mt-3">most
+                                popular</span>
+                        </div>
+                    </div>
+                    <div class="group">
+                        <div
+                            class="border rounded-xl border-gray-300 bg-white dark:border-gray-700 dark:bg-neutral-900">
+                            <div class="text-center">
+                                <div class="flex flex-col">
+                                    <div class="text-center pt-10">
+                                        <h5 class="text-xl font-semibold">Penitipan Menginap</h5>
+                                        <h2 class="text-3xl mt-8 mb-3 items-center align-middle">
+                                            <sup class="text-1xl align-middle">Rp</sup>100.000 - <sup
+                                                class="text-1xl align-middle">Rp</sup>250.000
+                                        </h2>
+                                    </div>
+
+                                    <div class="p-10">
+                                        <ul class="mb-10 text-center">
+                                            <li class="my-4">
+                                                <h5 class="font-medium dark:text-gray-300">Kucing: Rp 150.000/malam</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="font-medium dark:text-gray-300">Anjing Kecil (di bawah 10
+                                                    kg): Rp 180.000/malam</h5>
+                                            </li>
+                                            <li class="my-4">
+                                                <h5 class="font-medium dark:text-gray-300">Anjing Besar (di atas 10 kg):
+                                                    Rp 250.000/malam</h5>
+                                            </li>
+                                            <li>
+                                                <h5 class="font-medium dark:text-gray-300">Hewan Kecil (kelinci,
+                                                    hamster, burung, dll.): Rp 100.000/malam</h5>
+                                            </li>
+                                            <li class="my-4">
+                                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                                            </li>
+                                            <li class="my-4">
+                                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                                            </li>
+                                            <li class="my-4">
+                                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                                            </li>
+                                            <li class="my-4">
+                                                <h5 class="font-medium text-gray-500 line-through dark:text-gray-300">-
+                                                </h5>
+                                            </li>
+                                        </ul>
+                                        <div class="flex justify-center">
+                                            <a href="#"
+                                                class="py-3 px-6 font-medium border rounded-md border-purple-500 bg-purple-500 text-white hover:bg-purple-500-800">Penitipan
+                                                Menginap</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="absolute bg-neutral-300/30 rounded-xl dark:bg-neutral-700 h-full left-0 top-0 w-full translate-x-2 translate-y-2 -z-10">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex flex-col border border-gray-300 rounded-xl overflow-hidden dark:border-gray-700">
+                    <div class="text-center pt-10">
+                        <h5 class="text-xl font-semibold">Layanan Perawatan</h5>
+                        <h2 class="text-3xl mt-8 mb-3 items-center align-middle">
+                            <sup class="text-1xl align-middle">Rp</sup>30.000 - <sup
+                                class="text-1xl align-middle">Rp</sup>120.000
+                        </h2>
+                    </div>
+
+                    <div class="p-10">
+                        <ul class="mb-10 text-center">
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">Mandi Kucing: Rp 70.000</h5>
+                            </li>
+                            <li>
+                                <h5 class="font-medium dark:text-gray-300">Mandi Anjing Kecil (di bawah 10 kg): Rp
+                                    90.000</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">Mandi Anjing Besar (di atas 10 kg): Rp
+                                    120.000</h5>
+                            </li>
+                            <li>
+                                <h5 class="font-medium dark:text-gray-300">Potong Kuku: Rp 30.000</h5>
+                            </li>
+
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                            <li class="my-4">
+                                <h5 class="font-medium dark:text-gray-300">-</h5>
+                            </li>
+                        </ul>
+                        <div class="flex justify-center">
+                            <a href="#"
+                                class="py-3 px-6 font-medium border rounded-md border-purple-500 text-purple-500 hover:bg-purple-500 hover:text-white transition-all duration-500">Layanan
+                                Perawatan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center bg-base-300 text-base-content p-4">
+        <aside>
+            <p>Copyright ©2024 - All right reserved by HalloPet</p>
+        </aside>
+    </footer>
+</body>
+
+</html>
